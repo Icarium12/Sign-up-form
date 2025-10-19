@@ -8,6 +8,7 @@
 
 body {
     display: flex;
+    justify-content: center;
 }
 
 .background {
@@ -47,25 +48,18 @@ a {
 .formContainer {
     display: flex;
     flex-direction: column;
-    border: 1px solid gray;
     height: 700px;
     width: 35%;
+    background-color: rgb(252, 251, 248);
 }
 
 .intro {
-    border: 1px solid green;
     margin-top: 70px;
     margin-left: 20px;
     margin-right: 20px;
-}
-
-.form {
-    border: 1px solid green;
-    height: 300px;
-    width: em;
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 25px;
 }
 
 .formrow {
@@ -79,4 +73,69 @@ label {
 
 .field {
     margin-right: 60px;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+input[id="password"]:invalid {
+    border: 1px solid red;
+}
+
+input[type="email"]:user-invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 5px 5px 10px rgba(1, 5, 58, 0.3);
+}
+
+.field-container {
+    height: 220px;
+    box-shadow: 0 5px 10px rgba(1, 5, 58, 0.3);
+    background-color: rgb(252, 250, 249);
+    width: em;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+button {
+    margin-top: 30px;
+    color: white;
+    background-color: blue;
+    height: 40px;
+    width: 170px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.login {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.login a {
+    color: blue;
+    text-decoration: none;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3px;
+    font-weight: 500;
 }
